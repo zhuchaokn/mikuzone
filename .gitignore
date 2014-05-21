@@ -1,0 +1,11 @@
+.settings/
+bin/
+.classpath
+.project
+*.cfg
+*.iml
+*.swp
+target/
+out/
+gen/
+project.properties

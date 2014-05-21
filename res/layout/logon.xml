@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/logon_headleftt"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/logon_neckmid" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logon_usernameleft" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/logon_username"
+                 >
+
+             <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/logon_username"
+                android:background="@null"
+                android:hint="请输入用户名"
+                 />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logon_passwordleft" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/logon_username"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/logon_password"
+                    android:inputType="textPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:hint="请输入密码" 
+                    android:background="@null"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp" >
+
+        <ImageButton
+            android:id="@+id/logon_logon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logon_btn_logon"
+            android:scaleType="fitXY"
+            android:src="@xml/buttondown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+         >
+
+       <ImageButton
+           android:id="@+id/logon_signup"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="20dp"
+           android:scaleType="fitXY"
+           android:background="@drawable/logon_btn_regist"
+           android:src="@xml/buttondown" />
+
+       <ImageButton
+           android:id="@+id/logon_weibo"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:scaleType="fitXY"
+           android:layout_marginRight="20dp"
+           android:layout_marginTop="20dp"
+           android:background="@drawable/logon_btn_weibo"
+           android:src="@xml/buttondown" />
+       
+    </LinearLayout>
+
+</LinearLayout>

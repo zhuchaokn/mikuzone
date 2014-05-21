@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/logon_headleftt"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".MainActivity" >
+		 <LinearLayout
+		     	android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:background="@drawable/logon_username"
+                 >
+
+             <EditText
+                android:id="@+id/textServerIp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|center_vertical"
+                android:background="@null"
+                android:hint="服务器地址"
+                 />
+            </LinearLayout>
+
+		 <ImageButton
+		     android:id="@+id/congfig_btn_set"
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:scaleType="fitXY"
+		     android:layout_marginTop="20dp"
+		     android:background="@drawable/subregist_regist"
+		     android:src="@xml/buttondown" />
+
+</LinearLayout>
